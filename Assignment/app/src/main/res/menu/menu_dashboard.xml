@@ -1,0 +1,25 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Dashboard">
+
+    <item
+        android:id="@+id/action_taskApp"
+        android:title="@string/webViewPageText"
+        android:orderInCategory="102"
+        app:showAsAction= "never" />
+
+    <item
+        android:id="@+id/action_Map"
+        android:title="Where Am I?"
+        android:orderInCategory="103"
+        app:showAsAction= "never" />
+
+    <item
+        android:id="@+id/action_lessons"
+        android:title="@string/lessonsActionItem"
+        android:orderInCategory="101"
+
+        app:showAsAction= "always" />
+</menu>

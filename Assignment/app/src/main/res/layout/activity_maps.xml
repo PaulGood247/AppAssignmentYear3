@@ -1,0 +1,80 @@
+<!-- <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/map"
+    tools:context="com.example.paul.assignment.MapsActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment" /> -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MapActivity" >
+
+<RadioGroup
+    android:id="@+id/radioGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="4dp" >
+
+    <RadioButton
+        android:id="@+id/radioPopular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Go To Current Location"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        />
+    <View
+        android:id="@+id/VerticalLine1"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="#aaa" />
+
+    <RadioButton
+        android:id="@+id/radioAZ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Reset View"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/VerticalLine2"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="#aaa" />
+
+    <RadioButton
+        android:id="@+id/radioCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Go To DIT Kevin St."
+        android:layout_weight="1"
+        />
+    <View
+        android:id="@+id/VerticalLine"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="#aaa" />
+
+    <RadioButton
+        android:id="@+id/radioNearBy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Current Location Zoomed Out"
+        android:layout_weight="1"
+        />
+</RadioGroup>
+
+<fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:scrollbars="vertical"
+    android:layout_below="@id/radioGroup"
+    class="com.google.android.gms.maps.SupportMapFragment"/>
+</RelativeLayout>

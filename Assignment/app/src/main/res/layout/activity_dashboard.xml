@@ -1,0 +1,185 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="@string/dashboardWelcomeText"
+        android:id="@+id/welcomeTextView"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/margin1"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@+id/welcomeTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addLessonText"
+        android:textStyle="bold"
+        android:id="@+id/addLessonTextView"
+        android:textSize="20dp"
+        android:layout_below="@+id/margin1"
+        android:layout_toRightOf="@+id/addLessonButtonView"
+        android:layout_toEndOf="@+id/addLessonButtonView" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:background="@null"
+        android:id="@+id/addLessonButtonView"
+        android:layout_alignTop="@+id/addLessonTextView"
+        android:layout_alignLeft="@+id/margin1"
+        android:layout_alignStart="@+id/margin1" />
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/margin2"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@+id/addLessonButtonView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/removeLessonText"
+        android:textStyle="bold"
+        android:id="@+id/removeLessonTextView"
+        android:textSize="20dp"
+        android:layout_below="@+id/margin2"
+        android:layout_alignRight="@+id/addLessonTextView"
+        android:layout_alignEnd="@+id/addLessonTextView" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/remove"
+        android:background="@null"
+        android:id="@+id/removeLessonButtonView"
+        android:layout_alignTop="@+id/removeLessonTextView"
+        android:layout_alignLeft="@+id/margin2"
+        android:layout_alignStart="@+id/margin2" />
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/margin3"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@+id/removeLessonButtonView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/updateLessonText"
+        android:textStyle="bold"
+        android:id="@+id/updateLessonTextView"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/updateLessonButtonView"
+        android:layout_alignRight="@+id/removeLessonTextView"
+        android:layout_alignEnd="@+id/removeLessonTextView" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit"
+        android:id="@+id/updateLessonButtonView"
+        android:background="@null"
+        android:layout_below="@+id/margin3"
+        android:layout_alignLeft="@+id/removeLessonButtonView"
+        android:layout_alignStart="@+id/removeLessonButtonView" />
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/margin4"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@+id/updateLessonButtonView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webPageText"
+        android:layout_below="@+id/margin4"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:layout_margin="5dp"/>
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_below="@+id/webPageText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click The Icon To Add A New Lesson To Your Timetable!"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:id="@+id/addLessonDetails"
+        android:layout_below="@+id/addLessonTextView"
+        android:layout_toRightOf="@+id/addLessonButtonView"
+        android:layout_toEndOf="@+id/addLessonButtonView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click The Icon To Remove An Existing Lesson From Your Timetable!"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:id="@+id/removeLessonDetails"
+        android:layout_below="@+id/removeLessonTextView"
+        android:layout_alignLeft="@+id/removeLessonTextView"
+        android:layout_alignStart="@+id/removeLessonTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click The Icon To Update An Existing Lesson In Your Timetable!"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:id="@+id/updateLessonDetails"
+        android:layout_below="@+id/updateLessonTextView"
+        android:layout_alignLeft="@+id/updateLessonTextView"
+        android:layout_alignStart="@+id/updateLessonTextView" />
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,154 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classIdList"
+        android:textSize="10sp"
+        android:text="classid"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/classColourText"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classNameList"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="name"
+        android:layout_alignTop="@+id/classNameText"
+        android:layout_toRightOf="@+id/classNameText"
+        android:layout_toEndOf="@+id/classNameText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classTypeList"
+        android:text="Type"
+        android:textSize="15sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/classIdList"
+        android:layout_toRightOf="@+id/classTypeText"
+        android:layout_toEndOf="@+id/classTypeText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classLocationList"
+        android:text="location"
+        android:textSize="15sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_alignBottom="@+id/classColourText"
+        android:layout_toRightOf="@+id/classLocationText"
+        android:layout_toEndOf="@+id/classLocationText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classDayList"
+        android:text="Day"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:layout_below="@+id/classTypeList"
+        android:layout_toRightOf="@+id/classColourText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classStartTimeList"
+        android:text="1:00"
+        android:textSize="15sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_alignBottom="@+id/classTimeText"
+        android:layout_toRightOf="@+id/classTimeText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classEndTimeList"
+        android:text="2:00"
+        android:textSize="15sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_alignBottom="@+id/classTimeText1"
+        android:layout_toRightOf="@+id/classTimeText1"
+        />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:id="@+id/classColourText"
+        android:paddingRight="10dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_alignBottom="@+id/classLocationText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: "
+        android:textStyle="bold"
+        android:id="@+id/classTimeText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/classColourText"
+        android:paddingLeft="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  to  "
+        android:textStyle="bold"
+        android:id="@+id/classTimeText1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/classStartTimeList"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Name: "
+        android:textStyle="bold"
+        android:id="@+id/classNameText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/classTimeText1"
+        android:layout_toRightOf="@+id/classColourText"
+        android:paddingLeft="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Location: "
+        android:textStyle="bold"
+        android:id="@+id/classLocationText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/classNameText"
+        android:layout_toRightOf="@+id/classColourText"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Type: "
+        android:textStyle="bold"
+        android:id="@+id/classTypeText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/classLocationList"
+        />
+
+</RelativeLayout>

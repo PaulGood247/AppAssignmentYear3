@@ -1,0 +1,212 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/margin5"
+        android:background="@android:color/holo_green_dark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/details1"
+        android:padding="10dp"
+        android:text="Please Enter Details About The Lesson Below: "
+        android:textStyle="italic|bold"
+        android:layout_below="@id/margin5"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/enterNameEditText"
+        android:layout_height="wrap_content"
+        android:hint="@string/enterNameText"
+        android:inputType="textPersonName"
+        android:completionThreshold="1"
+        android:layout_width="fill_parent"
+        android:padding="10dp"
+
+        android:layout_below="@+id/details1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <AutoCompleteTextView
+        android:id="@+id/enterLocationEditText"
+        android:layout_height="wrap_content"
+        android:hint="@string/enterLocationText"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:completionThreshold="1"
+        android:layout_below="@+id/enterNameEditText"
+        android:padding="10dp"
+        />
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/margin6"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@id/enterLocationEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/details2"
+        android:padding="10dp"
+        android:text="Please Select The Day This Lesson Is On: "
+        android:textStyle="italic|bold"
+        android:layout_below="@id/margin6"/>
+
+    <Spinner
+        android:id="@+id/daysOfWeekSpinner"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:prompt="@string/spinnerDaysOfWeek"
+        android:layout_width="fill_parent"
+        android:entries="@array/daysOfWeek"
+        android:padding="10dp"
+        android:layout_below="@+id/details2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/margin7"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@id/daysOfWeekSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/details3"
+        android:padding="10dp"
+        android:text="Please Click 'Add Time' To Add A Timeslot For This Class: "
+        android:textStyle="italic|bold"
+        android:layout_below="@id/margin7"/>
+
+    <TextView
+        android:id="@+id/startTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_txt"
+        android:gravity="start"
+        android:padding="10dp"
+        android:layout_below="@+id/details3"
+        />
+
+    <TextView
+        android:id="@+id/startTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:padding="10dp"
+        android:layout_below="@+id/addStartTimeButtonView"
+        android:layout_toRightOf="@+id/startTimeText"
+        android:layout_toEndOf="@+id/startTimeText" />
+
+    <Button
+        android:id="@+id/addStartTimeButtonView"
+        android:layout_height="wrap_content"
+        android:text="@string/addTimeButtonText"
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:padding="10dp"
+        android:layout_below="@+id/details3"
+        android:layout_toRightOf="@+id/startTimeTextView"
+        android:layout_toEndOf="@+id/startTimeTextView" />
+
+    <TextView
+        android:id="@+id/endTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_txt2"
+        android:gravity="start"
+        android:padding="10dp"
+        android:layout_alignTop="@+id/startTimeTextView"
+        android:layout_alignLeft="@+id/margin7"
+        android:layout_alignStart="@+id/margin7" />
+
+    <TextView
+        android:id="@+id/endTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:padding="10dp"
+        android:layout_below="@+id/details3"
+        android:layout_toLeftOf="@+id/addStartTimeButtonView"
+        android:layout_toStartOf="@+id/addStartTimeButtonView" />
+
+    <Button
+        android:id="@+id/addEndTimeButtonView"
+        android:layout_height="wrap_content"
+        android:text="@string/addTimeButtonText"
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:padding="10dp"
+        android:layout_below="@+id/addStartTimeButtonView"
+        android:layout_alignLeft="@+id/addStartTimeButtonView"
+        android:layout_alignStart="@+id/addStartTimeButtonView" />
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/margin8"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@id/addEndTimeButtonView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/details4"
+        android:padding="10dp"
+        android:text="Please Select Which Type Of Class This Is : "
+        android:textStyle="italic|bold"
+        android:layout_below="@id/margin8"/>
+
+
+    <Spinner
+        android:id="@+id/classTypeSpinner"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:prompt="@string/spinnerClassType"
+        android:layout_width="fill_parent"
+        android:entries="@array/classTypes"
+        android:padding="10dp"
+        android:layout_below="@+id/details4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/addButtonView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/AddButton"
+        android:onClick="sendFeedback"
+        android:clickable="true"
+        android:padding="10dp"
+        android:layout_below="@+id/classTypeSpinner"
+        android:layout_alignRight="@+id/margin8"
+        android:layout_alignEnd="@+id/margin8" />
+
+
+</RelativeLayout>
+</ScrollView>
